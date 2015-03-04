@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document IE */
+.collapse-panel.collapsed:before, .collapse-panel:before{top:-22px!important;}
+.modal-dialog{max-width:600px;}
+.close{filter:alpha(opacity=100)!important;}
+@media (min-width: 1024px) {
+.nav-column-1{padding-left:10px;}
+.nav-column-2{float:right; width:495px;}
+}
+.reason.what-motif {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding-bottom: 160px;
+  padding-top: 60px;
+-ms-behavior: url(/backgroundsize.min.htc);
+	behavior: url(/backgroundsize.min.htc);
+}
+.legal .w-container{  padding-right: 20px;}
+.entry-content{display:block!important;}

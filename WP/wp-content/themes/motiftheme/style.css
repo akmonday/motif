@@ -1,0 +1,525 @@
+/*
+
+
+
+Theme Name: Motif 
+
+
+
+Theme URI: http://motif.com
+
+
+
+Author: Michael Chavez, Senior Developer Salt Branding
+
+
+
+Author URI: http://saltbranding.com
+
+
+
+Description: Designed by Chris Inclenrock and Carson Sloan, Salt Branding
+
+
+
+License: GNU General Public License v2 or later
+
+
+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+
+
+Tags: Awesome WordPress Theme
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+/**
+
+
+
+ * Table of Contents:
+
+
+
+ *
+
+
+
+ * 1.0 - Reset
+
+
+
+ * 2.0 - Repeatable Patterns
+
+
+
+ * 3.0 - Basic Structure
+
+
+
+ * 4.0 - Header
+
+
+
+ * 5.0 - Navigation
+
+
+
+ * 6.0 - Content
+
+
+
+ *   6.1 - Post Thumbnail
+
+
+
+ *   6.2 - Entry Header
+
+
+
+ *   6.3 - Entry Meta
+
+
+
+ *   6.4 - Entry Content
+
+
+
+ *   6.5 - Galleries
+
+
+
+ *   6.6 - Post Formats
+
+
+
+ *   6.7 - Post/Image/Paging Navigation
+
+
+
+ *   6.8 - Attachments
+
+
+
+ *   6.9 - Archives
+
+
+
+ *   6.10 - Contributor Page
+
+
+
+ *   6.11 - 404 Page
+
+
+
+ *   6.12 - Full-width
+
+
+
+ *   6.13 - Singular
+
+
+
+ *   6.14 - Comments
+
+
+
+ * 7.0 - Sidebar
+
+
+
+ *   7.1 - Widgets
+
+
+
+ *   7.2 - Content Sidebar Widgets
+
+
+
+ * 8.0 - Footer
+
+
+
+ * 9.0 - Featured Content
+
+
+
+ * 10.0 - Multisite
+
+
+
+ * 11.0 - Media Queries
+
+
+
+ * 12.0 - Print
+
+
+
+ * -----------------------------------------------------------------------------
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+/**
+
+
+
+ * 1.0 Reset
+
+
+
+ *
+
+
+
+ * Resetting and rebuilding styles have been helped along thanks to the fine
+
+
+
+ * work of Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+
+
+
+ * along with Nicolas Gallagher and Jonathan Neal
+
+
+
+ * http://necolas.github.com/normalize.css/ and Blueprint
+
+
+
+ * http://www.blueprintcss.org/
+
+
+
+ *
+
+
+
+ * -----------------------------------------------------------------------------
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#content .clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+body #content {
+	margin-bottom: 55px;
+	min-height: 500px;
+}
+body #content #pageHeading {
+	padding: 0;
+}
+body #content > #tracker {
+	background: url("images/contentBottomBG.png") repeat-x scroll 0 bottom rgba(0, 0, 0, 0);
+	position: relative;
+}
+body #content #pageHeading h2 {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.4;
+	margin: 0 0 40px;
+}
+#tracker .layout, #tracker .theme, #tracker .url, #tracker .intro, #tracker .reason {
+	margin-bottom: 20px;
+}
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+#tracker h3 {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+#colorbox #cboxLoadedContent > div {
+	margin: 25px;
+	padding: 0;
+}
+#tracker {
+	font-size: 16px;
+	line-height: 1.5em;
+	padding: 30px;
+}
+#tracker h3 {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+#tracker .layout,  #tracker .theme,  #tracker .url,  #tracker .intro,  #tracker .reason {
+	margin-bottom: 20px;
+}
+#tracker .layout li {
+	height: 160px;
+	margin: 0 8px;
+	padding: 0;
+	width: 30%;
+}
+#tracker .layout li a {
+	font-size: 14px;
+	padding: 10px 0;
+	width: 100%;
+}
+#tracker .theme li a {
+	font-size: 14px;
+	padding: 5px 0;
+	line-height: 1;
+	width: 155px;
+}
+#tracker .theme li a {
+	width: 155px;
+	padding: 5px 0;
+}
+#tracker .url a {
+	font-size: 11px;
+	margin-left: 10px;
+}
+#tracker #motifUrl {
+	padding: 8px;
+	width: 720px;
+}
+#tracker #error {
+	float: none;
+	width: auto;
+	display: none;
+}
+#tracker #buildYourWidget {
+	width: 145px;
+}
+#tracker #codeSnippet {
+	text-align: center;
+	margin-bottom: 50px;
+}
+#tracker #codeSnippet a:hover {
+	text-decoration: none;
+}
+#tracker #previewPanel {
+	display: none;
+}
+#tracker ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#tracker ul li {
+	-webkit-box-shadow: inset 0 0 2px 1px #999999;
+	-moz-box-shadow: inset 0 0 2px 1px #999999;
+	box-shadow: inset 0 0 2px 1px #999999;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	float: left;
+	margin-left: 15px;
+	text-align: center;
+	position: relative;
+}
+ #tracker ::-webkit-input-placeholder {
+ color: #999;
+}
+ #tracker :-moz-placeholder { /* Firefox 18- */
+ color: #999;
+}
+ #tracker ::-moz-placeholder {  /* Firefox 19+ */
+ color: #999;
+}
+ #tracker :-ms-input-placeholder {
+ color: #999;
+}
+.long-link {
+	word-wrap: break-word;
+}
+.mobile-left p {
+	width: 300px;
+}
+.selector li .icon {
+	display: inline-block;
+	margin-top: 15px;
+	background: url("images/motif-widget-builder-sprite.png") no-repeat;
+	width: 176px;
+}
+.selector li .icon.layout490x300 {
+	background-position: -7px -7px;
+	height: 110px;
+}
+.selector li .icon.layout490x230 {
+	background-position: -7px -125px;
+	margin-top: 30px;
+	height: 90px;
+}
+.selector li .icon.layout230x390 {
+	background-position: -7px -217px;
+	height: 111px;
+}
+.selector li .icon.dark {
+	background-position: -46px -337px;
+	height: 42px;
+	width: 102px;
+}
+.selector li .icon.light {
+	background-position: -46px -386px;
+	height: 42px;
+	width: 102px;
+}
+#tracker ul li a {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#tracker ul li a:hover {
+	text-decoration: none;
+}
+#tracker ul li:first-child {
+	margin-left: 0;
+}
+#tracker ul li.active {
+	background-color: #E4E4E4;
+}
+#tracker ul li.active a {
+	font-weight: 600;
+	color: #000;
+}
+#tracker ul li.active:hover {
+	cursor: default;
+}
+#tracker ul li.active:hover a:hover {
+	cursor: default;
+}
+#tracker ul li:hover {
+	cursor: pointer;
+}
+#tracker .preview h2 {
+	margin: 30px 0;
+	text-align: center;
+	font-size: 16px;
+	color: #BDBDBD;
+	font-weight: 600;
+}
+#tracker .preview textarea {
+	background-color: #F1F1F1;
+	font-family: monospace;
+	line-height: 1.3em;
+	padding: 10px;
+}
+#tracker {
+	border: 1px solid #cacaca;
+	border-radius: 4px;
+	box-shadow: 0 0 2px 1px #cccccc;
+}
+#tracker h3 {
+	color: #000;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin: 10px 0;
+	text-align: left;
+}
+#tracker #buildYourWidget {
+	color: #fff;
+	width: auto;
+	cursor: pointer;
+}
+#tracker #motifUrl, #tracker textarea {
+	max-width: 100%;
+}
+#main .theme li {
+	height: 80px;
+	width: 155px;
+}
+.toggleView {
+	margin: 0 !important;
+}
+/* SALCSLT-11 */
+
+.no-link {
+	text-decoration: none;
+}
+
+/* #SALCSLT-11 */
+
+@media (max-width: 767px) {
+#tracker {
+	padding: 10px;
+}
+#tracker .layout li {
+	margin: 0 0 15px;
+	width: 100%;
+}
+#tracker .theme li {
+	margin: 0 15px 15px 0;
+}
+}
+
+
+@media print {
+	.wysiwyg > ul{ padding-left:0;}
+	.body-text a { text-decoration: none; color: #3aad2a !important; }
+	a:link, a:visited {background: transparent; color: #3aad2a;text-decoration:none;}
+a:link[href^="http://"]:after, a[href^="http://"]:visited:after {content: " (" attr(href) ") "; display:none;}
+a[href^="http://"] ,.page-title h1{color: #3aad2a !important; } 
+.search-box{ display:none;}
+.wysiwyg > ul { padding-left: 0 !important; margin:0 5px;} 
+ .w-container { max-width: 1170px !important; width:1000px !important;}
+ .ticker-text,.ticker .button{ display:inline; margin:10px 0 !important; }
+  .ticker-text{ padding-right:10px;}
+ .wysiwyg p {  font-size: 16px; margin: 0 0 15px !important;}
+ .navigation{ position:relative !important; width:1000px; padding:20px 0;}
+ .menu-primary-navigation-container{ float:right !important;}
+ .nav-column-2{ width:23%;}
+ .nav-menu li{ margin:0 0 0 20px;}
+ .ticker{ position:relative; padding:10px 0; background-color: #ededed !important;}
+ .page-title h1{ margin:0 !important; padding:0 !important;}
+ .site-main{ padding-top:50px;}
+}

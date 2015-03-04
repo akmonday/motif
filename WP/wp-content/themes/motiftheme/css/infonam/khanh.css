@@ -1,0 +1,51 @@
+.wysiwyg ol,
+.wysiwyg ul {
+    margin: 0 40px;
+}
+
+.wysiwyg .anchor {
+    position: relative;
+    top: -356px;
+    height: 0px;
+    width: 0px;
+    display: block;
+    padding: 0px;
+}
+
+.wysiwyg .p2.menu {
+    text-align: center;
+    margin-top: 30px
+}
+
+.wysiwyg {
+/*    padding-top: 235px;*/
+}
+
+.wysiwyg .page-header-anchor {
+    background: none repeat scroll 0 0 #ffffff;
+    left: 0;
+    position: fixed;
+    top: 116px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .wysiwyg .page-header-anchor {
+        top:110px;
+    }
+    .nav-column-2{
+        width: 83.33%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .wysiwyg .page-header-anchor {
+        top:65px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .wysiwyg .page-header-anchor {
+        top:105px;
+    }
+}

@@ -1,0 +1,150 @@
+#colorbox #cboxLoadedContent > div {
+  margin: 25px;
+  padding: 0;
+}
+#main {
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 30px;
+}
+#main h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+#main .layout,
+#main .theme,
+#main .url,
+#main .intro,
+#main .reason {
+  margin-bottom: 20px;
+}
+#main .layout li {
+  width: 290px;
+  height: 160px;
+}
+#main .layout li a {
+  width: 290px;
+  padding: 10px 0;
+}
+#main .theme li {
+  width: 155px;
+  height: 80px;
+}
+#main .theme li a {
+  width: 155px;
+  padding: 5px 0;
+}
+#main .url a {
+  font-size: 11px;
+  margin-left: 10px;
+}
+#main #motifUrl {
+  padding: 8px;
+  width: 720px;
+}
+#main #error {
+  float: none;
+  width: auto;
+  display: none;
+}
+#main #buildYourWidget {
+  width: 145px;
+}
+#main #codeSnippet {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#main #codeSnippet a:hover {
+  text-decoration: none;
+}
+#main #previewPanel {
+  display: none;
+}
+#main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#main ul li {
+  -webkit-box-shadow: inset 0 0 2px 1px #999999;
+  -moz-box-shadow: inset 0 0 2px 1px #999999;
+  box-shadow: inset 0 0 2px 1px #999999;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  float: left;
+  margin-left: 15px;
+  text-align: center;
+  position: relative;
+}
+#main ul li .icon {
+  display: inline-block;
+  margin-top: 15px;
+  background: url("/images/2313.176/motif-widget-builder-sprite.png") no-repeat;
+  width: 176px;
+}
+#main ul li .icon.layout490x300 {
+  background-position: -7px -7px;
+  height: 110px;
+}
+#main ul li .icon.layout490x230 {
+  background-position: -7px -125px;
+  margin-top: 30px;
+  height: 90px;
+}
+#main ul li .icon.layout230x390 {
+  background-position: -7px -217px;
+  height: 111px;
+}
+#main ul li .icon.dark {
+  background-position: -46px -337px;
+  height: 42px;
+  width: 102px;
+}
+#main ul li .icon.light {
+  background-position: -46px -386px;
+  height: 42px;
+  width: 102px;
+}
+#main ul li a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#main ul li a:hover {
+  text-decoration: none;
+}
+#main ul li:first-child {
+  margin-left: 0;
+}
+#main ul li.active {
+  background-color: #E4E4E4;
+}
+#main ul li.active a {
+  font-weight: 600;
+  color: #000;
+}
+#main ul li.active:hover {
+  cursor: default;
+}
+#main ul li.active:hover a:hover {
+  cursor: default;
+}
+#main ul li:hover {
+  cursor: pointer;
+}
+#main .preview h2 {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #BDBDBD;
+  font-weight: 600;
+}
+#main .preview textarea {
+  background-color: #F1F1F1;
+  font-family: monospace;
+  line-height: 1.3em;
+  padding: 10px;
+}
+

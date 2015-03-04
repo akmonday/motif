@@ -1,0 +1,82 @@
+.press-landing li.active a
+{
+	color: #898989;	
+}
+.press-landing li a:hover
+{
+	color: #21D609;
+	text-decoration: underline
+}
+.press-landing li a
+{
+	color: #21D609;
+}
+.feature-row.padding-narrow .infonam-features-items.features-items
+{
+	vertical-align:top;
+}
+
+.slider-carousel-inner
+{
+    height: auto!important;
+}
+.feature-block
+{
+    height: auto;
+    min-height: 420px;
+}
+
+.icon-slider-left
+{
+    position: absolute;
+    top:50%;
+    margin-top:-10px;  
+     font-family: 'Zapf Dingbats';
+    
+}
+.icon-slider-right
+{
+    position: absolute;
+    top:50%;
+    margin:-10px 0 0 30px;
+    font-family: 'Zapf Dingbats';
+    
+}
+.fact-column
+{
+    min-height: 178px;
+}
+.reason-image
+{
+    position: relative;
+}
+.reason-image .ini-center-image
+{
+    width: 210px;
+    height: 210px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.reason-image .ini-center-image img
+{
+    width: 148px;
+    height: 148px;
+    margin: auto;
+    margin-top: 31px;
+}
+
+.reason-image  .ini-image-mask
+{
+   top:0!important;
+    left:0!important;
+    position: absolute!important;
+}
+.ini-scroll-position
+{
+    position: relative;
+    top: -280px;
+    height: 0px;
+    width: 0px;
+    display: block;
+    padding: 0px;
+}

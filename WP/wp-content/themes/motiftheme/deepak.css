@@ -1,0 +1,15 @@
+.reason {
+-ms-behavior: url(/backgroundsize.min.htc);
+	behavior: url(/backgroundsize.min.htc);
+}
+.reason.what-motif {
+-ms-behavior: url(/backgroundsize.min.htc);
+	behavior: url(/backgroundsize.min.htc);
+}
+.w-container{position:relative;}
+
+.cataglog-how-to-nav{position:absolute; right:0px; top:0px;}
+@media (min-width: 979px) {
+.catalog-img-wrap{ padding-top:0px; }
+
+}

@@ -1,0 +1,88 @@
+<div class="catalog no-shadow">
+	<div class="w-container news-container">
+		<h4 class="heading-text">Motif in the News</h4>
+		<div class="break-2 padding"></div>
+		<div class="w-row">
+			<?php global $post;
+			global $all_post_titles; //?possibly needed//
+			$counter = 0;
+			$all_post_titles = array();
+			$args = array( 'numberposts' => 7, 'category_name' => 'motif-in-the-news' );
+			$myposts = get_posts( $args );
+			foreach( $myposts as $post ) :	setup_postdata($post); ?>
+				<?php 
+				if ($counter < 4) {
+				?>
+				<div class="w-col w-col-6">
+					<div class="news-block news-align">
+					    <?php the_title( '<div class="text-link category"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">','</a></div>' ); ?>
+					    <?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && motiftheme_categorized_blog() ) : ?>
+					        <span class="blog-date">
+				                <?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'motiftheme' ) ); ?>
+					        </span>
+					    <?php endif; ?>
+
+					        <span class="blog-date">
+					            | 
+					            <?php
+					                if ( 'post' == get_post_type() )
+					                    motiftheme_posted_on();
+
+					                if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
+					            ?>
+					            <?php
+					                endif;
+
+					                edit_post_link( __( 'Edit', 'motiftheme' ), '<span class="edit-link">', '</span>' );
+					            ?>
+					        </span><!-- .entry-meta -->
+					    </div><!--.news-block -->
+
+				</div>
+				<?php	
+				} elseif ($counter > 4) {
+				?>
+				<div class="w-col w-col-6">
+					<div class="news-block news-align">
+					    <?php the_title( '<div class="text-link category"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">','</a></div>' ); ?>
+					    <?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && motiftheme_categorized_blog() ) : ?>
+					        <span class="blog-date">
+				                <?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'motiftheme' ) ); ?>
+					        </span>
+					    <?php endif; ?>
+
+					        <span class="blog-date">
+					            | 
+					            <?php
+					                if ( 'post' == get_post_type() )
+					                    motiftheme_posted_on();
+
+					                if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
+					            ?>
+					            <?php
+					                endif;
+
+					                edit_post_link( __( 'Edit', 'motiftheme' ), '<span class="edit-link">', '</span>' );
+					            ?>
+					        </span><!-- .entry-meta -->
+					    </div><!--.news-block -->
+
+				</div>
+
+				<?php
+				}
+				?>
+			<?php
+			$counter++; 
+			endforeach; 
+			?>
+			<?php wp_reset_postdata(); ?>
+		</div>
+		<div class="break-2"></div>
+		<div class="search-results padding">
+			<div class="body-text-2">
+				<a class="text-link" href="<?php echo site_url(); ?>/spark-blog/motif-in-the-news/">See all ›</a>
+			</div>
+		</div>
+	</div>
+</div>

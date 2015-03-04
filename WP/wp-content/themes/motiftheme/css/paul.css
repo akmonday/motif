@@ -1,0 +1,68 @@
+.carousel .featured-image-wrap-outer-border {
+    border: 16px solid #e2e2e2;
+    border-radius: 50%;
+    float: left;
+    height: 217px;
+    margin-right: 15px;
+    width: 217px;
+    behavior: url(/wp-content/themes/motiftheme/js/pie/PIE.htc);
+}
+
+.carousel .featured-image-wrap-inner-border {
+    border: 11px solid #fff;
+    border-radius: 150px;
+    box-shadow: 1px 4px 4px #ccc;
+    float: left;
+    height: 187px;
+    overflow: hidden;
+    position: relative;
+    width: 187px;
+    behavior: url(/wp-content/themes/motiftheme/js/pie/PIE.htc);
+}
+
+.carousel .featured-image-wrap {
+    border-radius: 0;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    behavior: url(/wp-content/themes/motiftheme/js/pie/PIE.htc);
+}
+
+.motifers .featured-image-wrap-outer-border {
+    border: 16px solid #e2e2e2;
+    border-radius: 50%;
+    float: none;
+    height: 202px;
+    margin: 0 auto 15px;
+    width: 202px;
+    position:relative;
+    behavior: url(/wp-content/themes/motiftheme/js/pie/PIE.htc);
+}
+.motifers .featured-image-wrap-inner-border {
+    border: 10px solid #fff;
+    border-radius: 150px;
+    box-shadow: 1px 4px 4px #ccc;
+    float: left;
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+    width: 170px;
+    behavior: url(/wp-content/themes/motiftheme/js/pie/PIE.htc);
+}
+.featured-image-wrap-outer-white-border {
+    border: 1px solid #fff;
+    border-radius: 150px;
+    height: 204px;
+    margin: 0 auto;
+    width: 204px;
+    position:relative;
+    behavior: url(/wp-content/themes/motiftheme/js/pie/PIE.htc);
+}
+
+.motifers .featured-image-wrap-inner-border img{
+    border-radius: 50%;
+    position:relative;
+    behavior: url(/wp-content/themes/motiftheme/js/pie/PIE.htc);
+}
