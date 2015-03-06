@@ -1,0 +1,6 @@
+#motif-of-the-week.carousel.slide.motif-of-the-week {  padding-top: 0px; }
+.collapse-panel:before{ content: url("../images/faq-compress.png")  !important; top:5px  !important;}
+
+.collapse-panel.collapsed:before {content: url("../images/faq-expand.png")  !important; margin-top: 5px;}
+
+.ie8 .collapse-panel:before{ top:0 !important;}
