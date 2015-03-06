@@ -1,8 +1,6 @@
-.ie8 .body-text .video-lightbox{width:200px; margin:0px auto 14px;}
-.ie8 .sparkline-block{padding-left:10px; padding-right:10px;}
-.wysiwyg .alignnone { display: block !important;  width: auto;}
-.collapse-panel:before{ content: url("../images/faq-compress.png")  !important; top:0 !important;}
-.collapse-panel.collapsed:before {content: url("../images/faq-expand.png")  !important;}
-.ie8 .collapse-panel:before{ top:0 !important;}
-.legal .w-container{ padding-right: 20px; }
+#motif-of-the-week.carousel.slide.motif-of-the-week {  padding-top: 0px; }
+.collapse-panel:before{ content: url("../images/faq-compress.png")  !important; top:5px  !important;}
 
+.collapse-panel.collapsed:before {content: url("../images/faq-expand.png")  !important; margin-top: 5px;}
+
+.ie8 .collapse-panel:before{ top:0 !important;}

@@ -271,8 +271,6 @@ function motiftheme_scripts() {
 	// Load Motiftheme styles.
 	wp_enqueue_style( 'motiftheme', get_template_directory_uri() .'/css/motiftheme.css' );
 	wp_enqueue_style( 'deepak', get_template_directory_uri() .'/css/deepak.css' );
-	wp_enqueue_style( 'css', get_template_directory_uri() .'/css/css.css' );
-	wp_enqueue_style( 'paul', get_template_directory_uri() .'/css/paul.css' );
 	wp_enqueue_style( 'colorbox', get_template_directory_uri() .'/css/colorbox.css' );
 
 	// Load Team Motif styles.
@@ -938,7 +936,6 @@ add_action('init', 'create_press');
 
 add_filter('post_link', 'press_permalink', 1, 3);
 add_filter('post_type_link', 'press_permalink', 1, 3);
-remove_filter('template_redirect', 'redirect_canonical'); 
 
 function press_permalink($permalink, $post_id, $leavename) {
 	//con %brand% catturo il rewrite del Custom Post Type
@@ -1029,16 +1026,8 @@ echo '</span></p>';
 }
 
 /*******************************************
-               *****     Ajax Pagination     *****
-******************************************
+               *****     Remove URl Redirect     *****
+******************************************/
 
-function localize_jsvar(){
-	wp_localize_script( 'ajax-pagination', 'ajaxpagination', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ))); 
-}
-add_action( "wp_enqueue_scripts", "localize_jsvar" );
+remove_filter('template_redirect', 'redirect_canonical'); 
 
-function all_result_pagination() {             					  				
-	die('Done');
-} 
-add_action('wp_ajax_all_result_pagination', 'all_result_pagination');
-add_action('wp_ajax_nopriv_all_result_pagination', array('ajaxtest', 'all_result_pagination'));*/

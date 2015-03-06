@@ -13,7 +13,7 @@
 <div id="content" class="site-content" role="main">
             <div class="page-title  margin-bottom"> 
                 <div class="w-container">
-				<h1><?php _e( 'Nothing Found', 'motiftheme' ); ?></h1>
+				<h1><?php _e( 'Page Not Found', 'motiftheme' ); ?></h1>
                 <div class="body-text"></div>
                 </div>
 			</div>
@@ -26,9 +26,9 @@
 
 	<?php elseif ( is_search() ) : ?>
 
-	<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'motiftheme' ); ?></p>
+	<p class="body-text"><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'motiftheme' ); ?></p>
 	<?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
-		<?php //dynamic_sidebar( 'sidebar-4' ); ?>
+		<?php dynamic_sidebar( 'sidebar-4' ); ?>
 	<?php endif; ?>
 	<?php get_search_form(); ?>
 

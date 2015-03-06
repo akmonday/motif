@@ -291,14 +291,12 @@ jQuery(function(){
 		    	
 		    	e.preventDefault();return false;
 		    });
-var widths = $(window).width();
-	 if (widths > 1000 && widths < 1200) {
-			if($("html").hasClass("ie8")){
+ var widths = $(window).width();
+	if (widths > 1000 && widths < 1200) {
+		if($("html").hasClass('ie8')){
 			$('.w-container').css('width', '980px');
 		}
 	}
-	
-
 
 if(widths < 641){
  jQuery('a[href^="#"]').on('click', function(event) {

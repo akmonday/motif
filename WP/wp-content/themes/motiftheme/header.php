@@ -148,12 +148,19 @@ motif.stockCache={};
 	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 
 	<![endif]-->
-
+	
 	<!--[if IE ]> 
 
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri();?>/css/ie-only.css" /> 
 
 	<![endif]-->
+
+	<!--[if IE 8]>
+
+	  	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri();?>/css/ie-8only-deepak.css" /> 
+
+	<![endif]-->
+
 
 <!--[if IE 9]> 
 
