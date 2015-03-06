@@ -13,7 +13,7 @@
 <div id="content" class="site-content" role="main">
             <div class="page-title  margin-bottom"> 
                 <div class="w-container">
-				<h1><?php _e( 'Page Not Found', 'motiftheme' ); ?></h1>
+				<h1><?php _e( 'Nothing Found', 'motiftheme' ); ?></h1>
                 <div class="body-text"></div>
                 </div>
 			</div>

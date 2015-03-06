@@ -11,6 +11,7 @@
 ?>
 
 </div><!-- #main -->
+
 <div class="w-hidden-tiny breadcrumb">
 	<div class="w-container s">
 		
@@ -90,7 +91,6 @@ $term = get_queried_object();
 	
 	</div>
 </div>
-<?php wp_footer(); ?>
-
+<?php wp_footer(); ?> 
 </body>
 </html>

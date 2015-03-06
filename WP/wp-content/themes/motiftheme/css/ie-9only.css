@@ -1245,3 +1245,10 @@ padding: 25px !important;
   padding-top: 0;
   text-align: center;
 }
+
+
+.faq-block.body-text ul li {
+
+list-style-type: disc !important;
+
+}
