@@ -10,7 +10,7 @@
 			    {
 			  // do nothing
 			    }
-			    ?>" style="background-image: url('<?php the_sub_field('background_image'); ?>');  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='<?php the_sub_field('background_image'); ?>', sizingMethod='scale');  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='<?php the_sub_field('background_image'); ?>', sizingMethod='scale');">
+			    ?>" style="background-image: url('<?php the_sub_field('background_image'); ?>');">
 		<div class="w-container">
 			<div class="w-row reason-row">
 				<div class="w-col w-col-6">

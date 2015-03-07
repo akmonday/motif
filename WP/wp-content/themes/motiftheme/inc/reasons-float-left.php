@@ -1,8 +1,7 @@
-
 <?php 
     $reason_slug =  sanitize_title_with_dashes(get_sub_field('heading'));
 ?>
-<div class="reason reasson-float-left ss" style="background-image: url('<?php the_sub_field('background_image'); ?>'); ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='<?php the_sub_field('background_image'); ?>', sizingMethod='scale'); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='<?php the_sub_field('background_image'); ?>', sizingMethod='scale');">
+<div class="reason reasson-float-left" style="background-image: url('<?php the_sub_field('background_image'); ?>'); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='<?php the_sub_field('background_image'); ?>', sizingMethod='scale');">
     <a id="<?php echo $reason_slug; ?>" class="reason-anchor" href="#"></a>
     <div class="w-container">
         <div class="w-row reason-row">

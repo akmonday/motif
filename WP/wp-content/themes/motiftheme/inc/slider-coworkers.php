@@ -1,11 +1,11 @@
 <div class="coworkers">
-    <div id="slider-coworkers" class="carousel slide" data-ride="carousel" data-interval="false">
-        <!-- Indicators 
+    <div id="slider-coworkers" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#slider-coworkers" data-slide-to="0" class="active">1</li>
             <li data-target="#slider-coworkers" data-slide-to="1">2</li>
-             <li data-target="#slider-coworkers" data-slide-to="2">3</li> 
-        </ol> -->
+            <!-- <li data-target="#slider-coworkers" data-slide-to="2">3</li> -->
+        </ol>
 
         <!-- Wrapper for slides -->
         <h2><?php the_sub_field ('slider_coworkers_heading', false, false); ?></h2>
@@ -14,8 +14,9 @@
             <?php if( have_rows('slider_coworkers_slide') ): ?>
             <?php while( have_rows('slider_coworkers_slide') ): the_row(); ?>
                 <div class="item <?php the_sub_field('first_slide'); ?>">
-                    <div class="co-workers">
+                    <div class="spark-container co-workers">
                         <div class="w-row learn-row motifers">
+
 
                             <?php if( have_rows('slider_coworkers_slide_item') ): ?>
                             <?php while( have_rows('slider_coworkers_slide_item') ): the_row(); ?>
@@ -59,13 +60,13 @@
         </div>
 
         <!-- Controls -->
-       <a href="#slider-coworkers" class="left carousel-control" role="button" data-slide="prev">
+       <a href="#slider-coworkers" role="button" data-slide="prev">
             <div class="w-slider-arrow-left w-hidden-small w-hidden-tiny">
                 <div class="w-icon-slider-left slider-nav-icon"></div>
             </div>
             <span class="sr-only">Previous</span>
         </a>
-        <a href="#slider-coworkers" class="right carousel-control" role="button" data-slide="next">
+        <a href="#slider-coworkers" role="button" data-slide="next">
             <div class="w-slider-arrow-right w-hidden-small w-hidden-tiny">
                 <div class="w-icon-slider-right slider-nav-icon"></div>
             </div>

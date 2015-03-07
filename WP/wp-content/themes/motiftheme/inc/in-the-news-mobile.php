@@ -1,4 +1,4 @@
-<div class="visible-xs visible-sm news in-the-news-mobile">
+<div id="jumpit" class="visible-xs visible-sm news in-the-news-mobile">
   <div class="w-container">
     <div class="tab-content">
       <?php 
