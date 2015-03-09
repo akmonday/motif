@@ -175,7 +175,7 @@
 		<div class="break-2"></div>
 		<div class="search-results padding">
 			<div class="body-text-2">
-				<a class="text-link" href="http://saltbranding.net/motif/about/press/">See all ›</a>
+				<a class="text-link" href="/about/press/">See all ›</a>
 			</div>
 		</div>
 	</div>

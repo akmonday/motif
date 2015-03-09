@@ -110,7 +110,8 @@ get_header(); ?>
                     	if ( have_posts() ) {
                     ?>
 
-                        <div class="w-col w-col-7 w-col-small-7 search-column-2 no-padding-top">
+                        <!-- <div class="w-col w-col-7 w-col-small-7 search-column-2 no-padding-top"> -->
+                        	<div class="w-col search-column-2 no-padding-top">
                             <span class="body-text pull-right">  
                             	<?php wp_pagenavi(); ?>
                             </span>

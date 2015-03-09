@@ -1016,7 +1016,7 @@ $parents = array_reverse($parents);
 foreach ($parents as $parent):
 $item = get_term_by( 'id', $parent, get_query_var( 'taxonomy' ));
 $url = get_bloginfo('url').'/'.$item->taxonomy.'/'.$item->slug;
-echo '<span typeof="v:Breadcrumb"><a property="v:title" rel="v:url" href="'.$url.'">'.$item->name.'</a></span><img alt="breadcrumb-divider.png" src="'.get_template_directory_uri().'/images/breadcrumb-divider.png" class="breadcrumb-spacer">';
+echo '<span typeof="v:Breadcrumb"><a property="v:title" rel="v:url" href="/investment-ideas/'.$item->slug.'">'.$item->name.'</a></span><img alt="breadcrumb-divider.png" src="'.get_template_directory_uri().'/images/breadcrumb-divider.png" class="breadcrumb-spacer">';
 endforeach;
 endif;
 

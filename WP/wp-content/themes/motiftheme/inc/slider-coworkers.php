@@ -21,7 +21,7 @@
                             <?php if( have_rows('slider_coworkers_slide_item') ): ?>
                             <?php while( have_rows('slider_coworkers_slide_item') ): the_row(); ?>
 
-                                <div class="w-col w-col-3">
+                                <div class="w-col w-col-3 carousel-mobile-width ">
                                     <div class="feature-block">
 
                                         <?php 
