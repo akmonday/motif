@@ -12008,6 +12008,7 @@ z-index:9999;
 }
 .video {
   margin-bottom: 30px;
+  text-align: center;
 }
 .reply-column-1 {
   display: block;
@@ -16725,7 +16726,8 @@ width: 100% !important;
     margin-left: auto;
   }
   .catalog-img-wrap {
-    width: 320px;
+    width: 320px !important;
+    padding-right:20px;
   }
   .post .featured-image-wrap-outer-border {
     float: none;
@@ -17112,4 +17114,23 @@ text-align: center;
 }
 
 
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding:0;
+    padding-right:100px !important;
+}
 

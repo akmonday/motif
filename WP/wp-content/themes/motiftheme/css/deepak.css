@@ -11,22 +11,37 @@
 .cataglog-how-to-nav{position:absolute; right:0px; top:0px;}
 
 
+@media (max-width: 980px) {
+
+.overscroll {  overflow-x: scroll; }
+/*
+.w-hidden-small.w-hidden-tiny.table {  display: block !important;   max-width: 980px;  width: 980px; }*/
+
+} 
+@media  (min-width: 979px)  and (max-width: 1024px){
+.w-col-9 {   width: 75% !important; }
+.w-col-3 { width: 25% !important; }
+}
 @media (max-width: 767px) {
 
 .blog .post .wp-post-image{width:78px; height:78px;}
 
 .search-column-1 .article-wrap{margin-top:0px;}
 
+
 }
-
-@media (max-width: 980px) {
-
-.overscroll {  overflow-x: scroll; }
-/* in order to have responsive tables in different formats, webflow grid expects two tables,  one for smaller screens and one for bigger screens. this hides the bigger table for bigger screens at smaller resolutions, so we need to display non on it 
-.w-hidden-small.w-hidden-tiny.table {  display: block !important;   max-width: 980px;  width: 980px; }
-
-} */
-
+@media (max-width: 420px) { 
+.img-centerphone { margin: 0 10%; }
+.img-centerphone > div {  text-align: center;}
+.blog-single .entry-content > p { float: left; }
+.navigation.post-navigation { position: fixed; }
+.difference { background-position: 71% 50%;  background-size: cover; }
+.
+}
+@media (max-width: 680px) { 
+.chart{float:none!important; margin-left:auto!important; margin-right:auto!important; }
+.chart iframe{width:98%!important;}
+}
 .grid-block.stroke{margin-right:-1px;}
 .grid-block.border-left{border-left:1px solid #dedede;}
 h2{padding-left:0px; padding-right:0px;}
